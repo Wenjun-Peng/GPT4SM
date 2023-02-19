@@ -98,14 +98,3 @@ def check_blue(tsv_path):
             label = [float(l) for l in label.split(',')]
             if len(label) != 5:
                 print(label)
-
-if __name__ == '__main__':
-    # train_tsv_path = "/home/v-wenjunpeng/hub/gpt_ads/data/SearchAds/teachertrain.tsv"
-    # test_tsv_path = "/home/v-wenjunpeng/hub/gpt_ads/data/SearchAds/test.tsv"
-    # dataset = load_func(train_tsv_path, test_tsv_path, 'ads')
-    train_tsv_path = "/home/v-wenjunpeng/hub/gpt_ads/data/BLUEv2_en/train.tsv"
-    test_tsv_path = "/home/v-wenjunpeng/hub/gpt_ads/data/BLUEv2_en/test.tsv"
-    dataset = load_func(train_tsv_path, test_tsv_path, 'blue')
-    # print(dataset)
-
-    # check_blue(train_tsv_path)

@@ -44,11 +44,3 @@ class GPTInfo:
                 nindex = self.nid2index[nid]
                 self.title_embs[nindex] = title_emb
                 self.body_embs[nindex] = body_emb
-
-
-if __name__ == "__main__":
-    news_info = NewsInfo(
-        "/vc_data/users/v-jingweiyi/MIND/gpt_embedding/emb",
-        "/vc_data/users/v-jingweiyi/MIND/all_news.tsv"
-    )
-    news_info.process()
